@@ -1,0 +1,107 @@
+/* Remove By Deafult Padding And Margin  */
+.navbar {
+    background-color: #333;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* position: fixed;
+    right: 0px; */
+    z-index: 100;
+}
+
+.logo {
+    margin-left: 20px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Not Working Fixed it */
+.container{
+    background-color: rgb(57, 55, 55);
+    height: 300px;
+    width: 20%;
+    display: flex;
+    align-items: center;
+                                                     /* Change  Value And Try */
+    /* justify-content: center;
+    flex-direction:  column;
+    flex-wrap: wrap;
+    gap: 20px;
+    overflow: hidden;
+    transition: all 0.3s; */
+
+}
+/* Wrire A Comment To Discribe What .divCol Mean and What is  pointing toward to  */
+.divCol {
+    height: 30px;
+    width: 50px;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    padding-top: 20px;
+}
+.col1 {
+    background: rgb(113, 113, 113);
+}
+.col2 {
+    background: rgb(17, 122, 85);
+}
+.col3 {
+    background: rgb(153, 13, 37);
+}
+
+
+
+
+
+/* Medidia Query For navigationbar   */
+@media screen and (max-width: 600px) {
+    .navbar {
+        align-items: flex-start;
+    }
+    .nav-links {
+        margin-top: 15px;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 400px) {
+    .navbar {
+        align-items: center;
+        /* if screen Width is Less then 400 then i want every thing logo and 
+        Links in Colume  */
+        flex-direction: row; 
+    }
+
+    /* Logo and Links in Same col and in Center   */
+    .nav-links {
+        margin-right : 20px;
+    }
+ /* .nav-links a{
+    color: red ;
+    font-size: 10px;
+ } */
+}
+
+
+/* Medidia Query For Conatiner  */
+@media screen and (max-width: 518px){
+    .container{
+        height: 350px;
+    }
+}
