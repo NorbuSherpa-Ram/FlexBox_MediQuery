@@ -1,0 +1,73 @@
+body {
+    /* use Alternative Way to remove default margin and padding  */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    /* Change Shadow Vlaue and See What happens  */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+h1 {
+    color: #1877f2;
+}
+
+label {
+    /* Why  Display Block  */
+    /* Try removing it and Give a BG Color To See What Will Happen  */
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+/* Remove Outline  */
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #1877f2;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* why Hove  and  Scale Down 
+ Button Size on Hover 
+ with Transition Duration 0.2s*/
+button:hover {
+    background-color: #166fe5;
+}
+
+.forgot-password {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #1877f2;
+}
+
+.create-account {
+    color: #1877f2;
+    font-weight: bold;
+    cursor: pointer; 
+}
