@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML and CSS Course</title>
+  <!-- Link to your CSS file -->
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      padding-top: 120px;
+      background: linear-gradient(to bottom, #333, #2980b9);
+      color: #fff
+    }
+
+    header {
+      background-color: #226896;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    section {
+      margin-top: 70px;
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 1px solid #ddd;
+    }
+
+    form {
+      display: grid;
+      gap: 10px;
+    }
+
+    footer {
+      background-color: #2980b9;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+    }
+
+    /* Media Query for Responsive Layout */
+    /* if max Width is 600px  
+    paddin-top to body 
+    
+    li block and margin bottom 10 
+     */
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>HTML and CSS Course</h1>
+    <nav>
+      <ul>
+        <li><a href="#overview">Course Overview</a></li>
+        <li><a href="#syllabus">Syllabus</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="overview">
+    <h2>Course Overview</h2>
+    <p>Welcome to our HTML and CSS course! In this course, you'll learn the fundamentals of web development using HTML
+      and CSS.</p>
+    <p>Whether you're a beginner or looking to enhance your skills, our comprehensive course will guide you through the
+      basics and advanced techniques of building modern and responsive websites.</p>
+  </section>
+
+  <section id="syllabus">
+    <h2>Course Syllabus</h2>
+    <ul>
+      <li>Introduction to HTML</li>
+      <li>HTML Document Structure</li>
+      <li>HTML Forms and Input Elements</li>
+      <li>CSS Basics and Selectors</li>
+      <li>CSS Box Model</li>
+      <li>Responsive Web Design</li>
+      <li>Flexbox and Grid Layout</li>
+      <li>CSS Transitions and Animations</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or inquiries, feel free to contact us using the form below:</p>
+
+    <form action="submit_form.php" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="info-section">
+      <h3>Location</h3>
+      <p>1234 Web Development Street<br>City, Country</p>
+      <h3>Contact Information</h3>
+      <p>Email: info@example.com<br>Phone: +1 (123) 456-7890</p>
+    </div>
+    <p>&copy; 2024 HTML and CSS Course. All rights reserved.</p>
+  </footer>
+
+</body>
+
+</html>
