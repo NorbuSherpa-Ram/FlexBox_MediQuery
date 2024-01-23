@@ -22,14 +22,53 @@
 
     <script>
 
+        // class Employee {
+        //     constructor(id, name) {
+        //         this.id = id;
+        //         this.name = name;
+        //     }
+        //     detail() {
+        //         document.writeln(this.id + " " + this.name + "<br>")
+        //     }
+        // }
+        // var e1 = new Employee(101, "Martin Roy");
+        // var e2 = new Employee(102, "Duke William");
+        // e1.detail(); 
+        // e2.detail();
+
+
+        // let myArray = [1, 2, 3, 4, 5];
+        // myArray.push(6, 7, 8, 9);
+        // console.log(myArray[8]);
+        // let slicedArray = myArray.slice(1, 5);  // Index 1 to end before  index 4
+        // console.log(slicedArray[3]);
+
+        // myArray.pop();
+        // console.log(myArray);
+
+        // const myArray = [1, 2, 3, 4, 5];
+
+        // console.log(myArray.at(-3)); 
+        // console.log(myArray.at(10));  
+
+        // console.log(myArray[-1]);  
+        // console.log(myArray[10]);
+
+        // let ab = 1235;
+        // console.log(ab.toString());
+        // let stringName = "String";
+
+        // console.log(stringName.length);
+        // console.log(stringName.charAt(1));
+
         /////////////////////////////////////////USE VAR FOR FUNCTIONAL VARIABLE YOU CAN USE IT FOR OTHER BUT IT MAY CAUSE ERROR ON HOSTING //////////////////////////////////////////////////////////////
 
 
         /////////////////////////////////////////////////////////////////////////////////VARIABLE DECLERATION ///////////////////////////////////////////////////////////////////////////////////////
         ///// Data Type _Identifire ;///////////////////////////////////////////////////
 
-        // let studentName = "Norbu Sherpa";   //STRING 
-        // let studenRollNo = 10; // INT 
+        // let studentName = "Norbu Sherpa";   //STRING
+        // let studenRollNo = 10; // INT
         // let studentAge = 10.5;  // FLOAT
         // const phoneNumber = 9841812128;
         //  let nullValue = null;
@@ -72,7 +111,7 @@
         /////////////////////////////////////////////////////////////CONVENTING NUMBER TO HOUR AND MIN///////////////////
         // let totalMinutes = 65;
         // let hours = Math.floor(totalMinutes / 60);
-        // let minutes = totalMinutes % 60; // if 65 remainder 5 
+        // let minutes = totalMinutes % 60; // if 65 remainder 5
         // console.log("Hour : " + hours + " hr :" + minutes + "  min");
 
         /////////////////////Reversing  String ////////////////////////////////////////
@@ -91,6 +130,29 @@
         // let reversedString = reverseString("Hello");
         // console.log(reversedString);
 
+        printPattern(5);
+
+        function printPattern(rows) {
+            for (let i = 1; i <= rows; i++) {
+                for (let j = 1; j <= i; j++) {
+                    document.write("*");
+                }
+                document.write("<br>");
+
+            }
+        } 
+        pattern(5);
+        function pattern(rows) {
+            for (let i = 1; i <= rows; i++) {
+                let pattern = '';
+                for (let j = 1; j <= i; j++) {
+                    pattern += '* ';
+                    //console.log("*");
+                }
+                //console.log("\n");
+                console.log(pattern);
+            }
+        }
     </script>
 </body>
 
